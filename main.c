@@ -3,16 +3,20 @@
 
 int main()
 {
-    int n, d, w, y;
-    printf("Input:\n");
-    printf("Enter days:");
-    scanf("%d",&n);
-    y=n/365;
-    w=(n%365)/7;
-    d=n-((y*365)+(w*7));
-    printf("Output:\n");
-    printf("Year:%d\n",y);
-    printf("Weeks:%d\n",w);
-    printf("Days:%d\n",d);
+    int a, b, c;
+    printf("Enter the value of a,b and c:\n");
+    scanf("%d %d %d", &a, &b, &c);
+    if (a>b&&a>c)
+    {
+        printf("%d is lerger than %d and %d", a, b, c);
+    }
+    else if (b>a&&b>c)
+    {
+        printf("%d is lerger than %d and %d", b, a, c);
+    }
+    else
+    {
+        printf("%d is lerger than %d and %d", c, a, b);
+    }
     return 0;
 }
